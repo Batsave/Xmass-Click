@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-gold: #f5bc2e;
+  --color-gold-hover: #cc9c21;
+  --color-gold-link: #5a4c28;
+  --color-white: #eaeaea;
+  --color-white-hover: #c9c9c9;
+  --color-light: #fefefe;
+  --color-black: #101010;
+  --color-grey: #202020;
+
+  --bg-color: var(--color-black);
+
+  --font: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  min-height: 100vh;
+  margin-top: 80px;
+}

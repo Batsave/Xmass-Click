@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1",
+    "linkname": "Accueil",
+    "linkurl": "/",
+    "btn": false
+  },
+  {
+    "id": "2",
+    "linkname": "Menu 1",
+    "linkurl": "/menu-1",
+    "btn": false,
+    "dropdown": [
+
+      {
+        "id": "2-01",
+        "linkname": "1",
+        "linkurl": "/1"
+      },
+      {
+        "id": "2-02",
+        "linkname": "2",
+        "linkurl": "/2"
+      },
+      {
+        "id": "2-03",
+        "linkname": "3",
+        "linkurl": "/3"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "linkname": "Menu-2",
+    "linkurl": "/menu-2",
+    "btn": false,
+    "dropdown": [
+
+      {
+        "id": "3-01",
+        "linkname": "1",
+        "linkurl": "/1"
+      },
+      {
+        "id": "3-02",
+        "linkname": "2",
+        "linkurl": "/2"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "linkname": "contact",
+    "linkurl": "/contact",
+    "btn": true
+  }
+]

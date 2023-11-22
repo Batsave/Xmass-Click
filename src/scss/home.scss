@@ -1,0 +1,296 @@
+
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  background: var(--color-grey);
+  background: linear-gradient(90deg, #101010ff, #10101000);
+  padding: 1rem;
+  box-sizing: border-box;
+
+  @media (max-width: 499px) {
+    padding: 1rem;
+  }
+
+  .background-video {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-position: center;
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    max-width: 132ch;
+
+    p {
+      width: fit-content;
+      height: fit-content;
+      font-family: var(--font);
+      font-weight: 600;
+      font-size: 22px;
+      color: var(--color-gold);
+      margin: 0;
+    }
+
+    h1 {
+      width: fit-content;
+      height: fit-content;
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 4rem;
+      color: var(--color-white);
+      text-align: left;
+      margin: 0;
+
+      @media (max-width: 999px) {
+        font-size: max(6.5vw, 24px);
+      }
+      
+    }
+
+    h2 {
+      width: fit-content;
+      height: fit-content;
+      letter-spacing: 0.05em;
+      font-family: var(--font);
+      font-weight: 300;
+      font-size: 1em;
+      color: var(--color-white);
+      margin: 0;
+
+    }
+  }
+
+  .btnsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 2rem;
+    gap: 12px;
+  }
+}
+
+.massages-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-white);
+  padding: 6rem 0;
+  box-sizing: border-box;
+
+  .content {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1rem;
+
+    .title {
+      font-family: var(--font);
+      font-weight: 500;
+      font-size: 1.8em;
+      color: var(--color-black);
+      text-align: center;
+    }
+    .separator {
+      width: 4rem;
+      border: solid 1px var(--color-gold-hover);
+    }
+
+    .massagecardlist {
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      max-width: 160ch;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.about-container {
+  display: flex;
+  width: 100%;
+  height: max-content;
+  background-color: var(--color-light);
+  box-sizing: border-box;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 132ch;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 2rem;
+    padding: 6rem 0;
+    
+
+    @media (max-width: 999px) {
+      flex-direction: column;
+      max-width: 90%;
+    }
+    .picture {
+      display: flex;
+      min-width: 260px;
+      
+      height: auto;
+      min-height: 400px;
+      background-image: url(../webp/Epimeleia_Massage_46.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+      
+    }
+
+    .paragraphe {
+      display: flex;
+      width: 70%;
+
+      font-family: var(--font);
+      font-weight: 500;
+      font-size: 1em;
+      color: var(--color-black);
+
+      @media (max-width: 999px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.origin-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 6rem 0;
+
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 132ch;
+    margin: auto;
+  }
+  .titlecontent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 1rem;
+    
+    box-sizing: border-box;
+
+    .title {
+      font-family: var(--font);
+      font-weight: 500;
+      font-size: 2em;
+      color: var(--color-black);
+      text-align: center;
+    }
+    .separator {
+      align-items: center;
+      width: 4rem;
+      border: solid 1px var(--color-gold-hover);
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    box-sizing: border-box;
+    margin: auto;
+
+    @media (max-width: 999px) {
+      max-width: 90%;
+    }
+
+    .intertitle {
+      
+      font-family: var(--font);
+      font-weight: 600;
+      font-size: 1em;
+      color: var(--font);
+      text-align: left;
+      margin-top: 2rem;
+    }
+
+    .paragraphe {
+      
+      max-width: 100%;
+      
+      font-family: var(--font);
+      font-weight: 500;
+      font-size: 1em;
+      color: var(--color-black);
+    }
+  }
+}
+
+.map-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fefefe;
+  padding: 3rem;
+  gap:2rem;
+  
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    padding-top: 2rem;
+
+    .title {
+      font-family: var(--font);
+      font-weight: 500;
+      font-size: 2em;
+      color: var(--color-black);
+      text-align: center;
+    }
+    .separator {
+      align-items: center;
+      width: 4rem;
+      border: solid 1px var(--color-gold-hover);
+    }
+    .map-content {
+      display: flex;
+      width: 100%;
+      max-width: 134ch;
+      
+      height: 400px;
+    }
+  }
+  
+
+}
+
+
