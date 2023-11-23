@@ -39,6 +39,7 @@ export default function BoutiqueCard({
         </div>
         <PrimaryBtn className="buttoncard" btnText="Acheter" btnLink={link} />
       </div>
+      
     </div>
   );
 }
