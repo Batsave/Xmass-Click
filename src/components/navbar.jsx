@@ -8,8 +8,25 @@ import PrimaryButton from "./buttons/PrimaryButton";
 import Burger from "./burger";
 import { useWildCoin } from "./WildCoin/WildCoinContext";
 import WildCoinIncrementAction from "./WildCoin/WildCoinIncrementAction";
-export default function Navbar({ navData }) {
+import HUDON from "../../public/NavBar/HUDON.svg";
+import HUDOFF from "../../public/NavBar/HUDOFF.svg";
+import { useState } from "react";
+
+
+export default function Navbar({ navData, isVisible, setIsVisible }) {
   const { wildCoin } = useWildCoin();
+  const [imageSrc, setImageSrc] = useState(HUDON);
+
+  const toggleHud = () => {
+  
+    if (!isVisible) {
+      setIsVisible(true)
+      setImageSrc(HUDOFF)
+    }else{
+      setIsVisible(false)
+      setImageSrc(HUDON)
+    }
+  }
   return (
     <nav className="header-main">
       <Link
@@ -62,6 +79,7 @@ export default function Navbar({ navData }) {
             );
           })}
         </ul>
+        <img onClick={() => toggleHud()} src={imageSrc} alt="boutton on" />
         <Burger navData={navData} />
       </div>
     </nav>

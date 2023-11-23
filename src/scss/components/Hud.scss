@@ -1,0 +1,18 @@
+.hudContainer {
+  background-color: var(--color-grey);
+  color: var(--color-white);
+  font-family: var(--font);
+  width: 605px;
+  height: 139px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: aliceblue;
+  font-size: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+}
