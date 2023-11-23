@@ -23,7 +23,7 @@ function App() {
       />
       <Hud isVisible={isVisible} setIsVisible={setIsVisible} />
       <main>
-        <Outlet context={[url, setUrl]} />
+        <Outlet context={[url, setUrl]} className="outletVisual"/>
       </main>
       <Footer />
     </>
