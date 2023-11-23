@@ -12,11 +12,16 @@ import navData from "./data/NavBarData.json";
 
 function App() {
   const [url, setUrl] = useState("https://opentdb.com/api.php?amount=1");
-
+  const [isVisible, setIsVisible] = useState(false);
   return (
     <>
-      <Navbar setUrl={setUrl} navData={navData} />
-      <Hud />
+      <Navbar
+        setUrl={setUrl}
+        navData={navData}
+        isVisible={isVisible}
+        setIsVisible={setIsVisible}
+      />
+      <Hud isVisible={isVisible} setIsVisible={setIsVisible} />
       <main>
         <Outlet context={[url, setUrl]} />
       </main>

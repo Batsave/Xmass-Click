@@ -2,11 +2,13 @@ import "../../scss/components/Hud.scss";
 import { useWildCoin } from "../WildCoin/WildCoinContext";
 import { useState } from "react";
 
-function Hud() {
+function Hud({ isVisible }) {
   const { incrementClick, incrementPerSecond } = useWildCoin();
-
+  const hiddenDiv = isVisible ? "none" : null
+  console.log(hiddenDiv);
   return (
-    <div className="hudContainer">
+
+    <div style={{display:hiddenDiv}} className="hudContainer">
       <div className="time">
         <p>Temps de jeu</p>
         <p>...</p>
