@@ -5,14 +5,14 @@ import { useWildCoin } from "../components/WildCoin/WildCoinContext";
 
 export default function Home() {
   var snow = {
-    wind: 0,
-    maxXrange: 25,
-    minXrange: 10,
-    maxSpeed: 2,
-    minSpeed: 1,
+    wind: 4,
+    maxXrange: 40,
+    minXrange: 20,
+    maxSpeed: 1,
+    minSpeed: 3,
     color: "#fff",
     char: "*",
-    maxSize: 30,
+    maxSize: 25,
     minSize: 12,
 
     flakes: [],
