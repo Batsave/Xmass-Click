@@ -80,7 +80,7 @@ export default function Navbar({ navData, isVisible, setIsVisible }) {
             );
           })}
         </ul>
-        <img onClick={() => toggleHud()} src={imageSrc} alt="boutton on" />
+        <img onClick={() => toggleHud()} src={imageSrc} style={{height:'28px'}} alt="boutton on" />
         <Burger navData={navData} />
       </div>
     </nav>
