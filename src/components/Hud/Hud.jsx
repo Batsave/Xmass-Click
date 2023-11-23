@@ -1,8 +1,10 @@
 import "../../scss/components/Hud.scss";
 import { useWildCoin } from "../WildCoin/WildCoinContext";
+import { useState } from "react";
 
 function Hud() {
   const { incrementClick, incrementPerSecond } = useWildCoin();
+
   return (
     <div className="hudContainer">
       <div className="time">
