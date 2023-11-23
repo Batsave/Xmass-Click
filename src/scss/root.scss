@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -22,7 +23,7 @@ a {
 }
 
 main {
-  min-height: 100vh;
+  min-height: 88vh;
   margin-top: 80px;
   padding: 0 0 2rem;
   background-color: var(--bg-color);

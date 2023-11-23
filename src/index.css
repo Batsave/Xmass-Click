@@ -1,0 +1,10 @@
+:root {
+  margin: 0;
+  padding: 0;
+  
+}
+::-webkit-scrollbar {
+  width: 1px;
+  display: none;
+
+}

@@ -20,8 +20,10 @@ export default function Navbar({ navData }) {
       />
       <div className="navbar">
         <ul className="nav-list">
-          <WildCoinIncrementAction />
+          <div className="wildCoin">
           {wildCoin}
+          <WildCoinIncrementAction />
+          </div>
           {navData.map((navIndex) => {
             if (navIndex.dropdown === undefined) {
               return navIndex.btn === false ? (
