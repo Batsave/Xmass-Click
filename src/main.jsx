@@ -7,6 +7,7 @@ import { WildCoinProvider } from "./components/WildCoin/WildCoinContext";
 import Ameliorations from "./components/WildCoin/Amelioration";
 import Boutique from "./pages/Boutique";
 import Achievements from "./pages/Achievements";
+import Legal from "./pages/Legal";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/achievements",
         element: <Achievements />,
+      },
+      {
+        path: "/mentionslegales",
+        element: <Legal />,
       },
     ],
   },
