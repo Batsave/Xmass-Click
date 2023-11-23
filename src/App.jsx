@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
+import Hud from "./components/Hud/Hud";
 
 import "./scss/root.scss";
 import "./scss/components/footer.scss";
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar setUrl={setUrl} navData={navData} />
+      <Hud />
       <main>
         <Outlet context={[url, setUrl]} />
       </main>
