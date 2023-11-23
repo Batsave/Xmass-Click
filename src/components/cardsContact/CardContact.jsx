@@ -10,7 +10,7 @@ CardContact.propTypes = {
 function CardContact({ name, gitHub }) {
   return (
     <div className="cardContact">
-      <Link to={gitHub}>
+      <Link to={gitHub} target="_blank">
         <button className="Btn">
           <svg
             className="svgIcon"
