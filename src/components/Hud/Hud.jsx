@@ -9,15 +9,15 @@ function Hud({ isVisible }) {
   return (
 
     <div style={{display:hiddenDiv}} className="hudContainer">
-      <div className="time">
+      <div className="time section">
         <p>Temps de jeu</p>
         <p>...</p>
       </div>
-      <div className="auto">
+      <div className="auto section">
         <p>Auto CPS</p>
         <p>{incrementPerSecond}</p>
       </div>
-      <div className="player">
+      <div className="player section">
         <p>Player CPS</p>
         <p>{incrementClick}</p>
       </div>
