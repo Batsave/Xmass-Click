@@ -1,29 +1,29 @@
 [
   {
-    "name": "Chausette",
-    "price": "150",
-    "decription": "Chausette de qualité",
+    "name": "Bierre",
+    "price": "8000",
+    "description": "Boisson de qualité, double tout les CPS, attention à ne pas trop en abbusé",
     "link": "/",
-    "image": "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bf6d.png"
+    "image": "./public/svg/Beer.svg"
   },
   {
-    "name": "Chausette",
+    "name": "Manic",
     "price": "250",
-    "decription": "Chausette de qualité",
+    "description": "Evite de vous bruler quand vous sortez les cookies du four, vous gagnez 5 CPS",
+    "link": "/",
+    "image": "./public/svg/Hand.svg"
+  },
+  {
+    "name": "Chausette",
+    "price": "150",
+    "description": "Chausette de qualité",
     "link": "/",
     "image": "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bf6d.png"
   },
   {
     "name": "Chausette",
     "price": "150",
-    "decription": "Chausette de qualité",
-    "link": "/",
-    "image": "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bf6d.png"
-  },
-  {
-    "name": "Chausette",
-    "price": "150",
-    "decription": "Chausette de qualité",
+    "description": "Chausette de qualité",
     "link": "/",
     "image": "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bf6d.png"
   }

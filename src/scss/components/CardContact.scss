@@ -19,12 +19,13 @@
 }
 
 .svgIcon path {
-  fill: white;
+  fill: var(--color-white)
 }
 
 .text {
   position: absolute;
-  color: rgb(255, 255, 255);
+  font-family: var(--font);
+  color: var(--color-white);
   width: 120px;
   font-weight: 600;
   opacity: 0;
@@ -61,7 +62,8 @@
 }
 
 .cardContact  p {
-  color: var(--color-white);
+  font-family: var(--font);
+  color: var(--color-grey);
 }
 
 

@@ -1,34 +1,34 @@
 import "../scss/components/footer.scss";
 import { NavLink as Link } from "react-router-dom";
-import CardContact from "../components/cardsContact/cardContact";
+import CardContact from "./cardsContact/CardContact";
 
 const infoDev = [
   {
-    "id": "1",
-    "name": "Alix C",
-    "gitHub": "https://github.com/Halicksse",
+    id: "1",
+    name: "Alix C",
+    gitHub: "https://github.com/Halicksse",
   },
   {
-    "id": "2",
-    "name": "Sebatien L",
-    "gitHub": "https://github.com/Lambseb",
+    id: "2",
+    name: "Sebatien L",
+    gitHub: "https://github.com/Lambseb",
   },
   {
-    "id": "3",
-    "name": "Baptiste S",
-    "gitHub": "https://github.com/Batsave",
+    id: "3",
+    name: "Baptiste S",
+    gitHub: "https://github.com/Batsave",
   },
   {
-    "id": "4",
-    "name": "Kevin T",
-    "gitHub": "https://github.com/tetardtek",
+    id: "4",
+    name: "Kevin T",
+    gitHub: "https://github.com/tetardtek",
   },
   {
-    "id": "5",
-    "name": "Nicolas DF",
-    "gitHub": "https://github.com/Defreitasnicolas",
+    id: "5",
+    name: "Nicolas DF",
+    gitHub: "https://github.com/Defreitasnicolas",
   },
-]
+];
 
 export default function Footer() {
   return (
@@ -42,20 +42,12 @@ export default function Footer() {
           title="Aller à la page d'accueil"
         />
         <div className="section">
-          <p className="section-title">Informations</p>
+          <p className="section-title">A Propos</p>
           <p className="section-text">
-            XXX
-            <br />
-            XXX
-            <br />
-            XXX
-            <br />
-            XXX
+            Ce site est un prototype d'exercice développé lors d'un Hackathon
+            dans le cadre d’une formation de Développeur Web et Mobile au sein
+            de la Wild Code School sur le campus Remote de Septembre 2023.
           </p>
-        </div>
-        <div className="section">
-          <p className="section-title">A propos</p>
-          <p className="section-text">Description</p>
         </div>
 
         <div className="section">
@@ -73,7 +65,6 @@ export default function Footer() {
               <Link to="/cookies" title="Aller à la page Cookies">
                 Cookies
               </Link>
-              
             </li>
             <li className="section-item"></li>
           </ul>
@@ -81,11 +72,11 @@ export default function Footer() {
         <div className="spacing" />
       </div>
       <div className="footer-section">
-      <div className="cardContactContainer">
-        {infoDev.map((info) => (
-          <CardContact key={info.id} name={info.name} gitHub={info.gitHub} />
-        ))}
-      </div>
+        <div className="cardContactContainer">
+          {infoDev.map((info) => (
+            <CardContact key={info.id} name={info.name} gitHub={info.gitHub} />
+          ))}
+        </div>
         <p className="copyright">© 2023 | XX. Tous droits réservés.</p>
       </div>
     </footer>
