@@ -5,7 +5,7 @@
     "incrementValue": 1,
     "description": "Bien chaud vous permet de tenir sur la durée",
     "link": "/",
-    "image": "./public/svg/tasse.svg",
+    "image": "./public/svg/Tasse.svg",
     "buyed": false,
     "type": "passif"
   },
@@ -25,7 +25,7 @@
     "incrementValue": 10,
     "description": "Un assistant idéal pour le click",
     "link": "/",
-    "image": "./public/svg/bonhome.svg",
+    "image": "./public/svg/Bonhome.svg",
     "buyed": false,
     "type": "actif"
   },
@@ -35,7 +35,7 @@
     "incrementValue": 10,
     "description": "Garder vos oreilles bien à l'abri du froid et click !",
     "link": "/",
-    "image": "./public/svg/bonnet.svg",
+    "image": "./public/svg/Bonnet.svg",
     "buyed": false,
     "type": "passif"
   },
@@ -45,7 +45,7 @@
     "incrementValue": 100,
     "description": "Le sucre c'est connu, ca reboost",
     "link": "/",
-    "image": "./public/svg/canne.svg",
+    "image": "./public/svg/Canne.svg",
     "buyed": false,
     "type": "passif"
   },
@@ -55,7 +55,7 @@
     "incrementValue": 100,
     "description": "Fait avec amour",
     "link": "/",
-    "image": "./public/svg/cookie.svg",
+    "image": "./public/svg/Cookie.svg",
     "buyed": false,
     "type": "actif"
   },

@@ -16,10 +16,8 @@ function AchievementsCard({ name, description, image }) {
           alt={`image de ${name}`}
         >
           <div className="achievetitle">
-            <p className="itemname">{name}</p>
-            <div className="achievdescription">
-              <p className="itemdescription">{description}</p>
-            </div>
+            <p className="achievname">{name}</p>
+            <p className="achievdescription">{description}</p>
           </div>
         </div>
       </div>
