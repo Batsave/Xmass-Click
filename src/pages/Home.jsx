@@ -122,7 +122,7 @@ export default function Home() {
   return (
     <main className="bghomecover">
       <Helmet>
-        <meta name="description" content="description text" />
+        <meta name="description" content="Xmass Click votre nouveau Clicker préféré !" />
         <meta name="robots" content="index, follow" />
         <meta
           name="googlebot"
@@ -132,20 +132,20 @@ export default function Home() {
           name="bingbot"
           content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
         />
-        <link rel="canonical" href="https://mywebsite.fr/accueil" />
-        <meta property="og:url" content="https://mywebsite.fr/accueil" />
-        <meta property="og:site_name" content="mywebsite" />
+        <link rel="canonical" href="https://xmass.click/" />
+        <meta property="og:url" content="https://xmass.click/" />
+        <meta property="og:site_name" content="Xmass Click" />
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="mywebsite | title" />
-        <meta property="og:description" content="description text" />
+        <meta property="og:description" content="Xmass Click votre nouveau Clicker préféré !" />
         <meta
           property="og:image"
-          content="https://mywebsite.fr/assets/webp/share-cover.webp"
+          content="https://xmass.click/webp/share-cover.webp"
         />
         <meta
           property="og:image:secure_url"
-          content="https://mywebsite.fr/assets/webp/share-cover.webp"
+          content="https://xmass.click/webp/share-cover.webp"
         />
         <meta property="og:image:width" content="584" />
         <meta property="og:image:height" content="384" />
@@ -155,20 +155,21 @@ export default function Home() {
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="" />
         <meta name="twitter:creator" content="" />
-        <meta name="twitter:title" content="mywebsite | title" />
-        <meta name="twitter:description" content="mywebsite | title" />
+        <meta name="twitter:title" content="Xmass Click" />
+        <meta name="twitter:description" content="Xmass Click votre nouveau Clicker préféré !" />
         <meta
           name="twitter:image"
-          content="https://mywebsite.fr/assets/webp/share-cover.webp"
+          content="https://xmass.click/webp/share-cover.webp"
         />
 
-        <title>My Website</title>
+        <title>Xmass Click</title>
       </Helmet>
 
       <div className="santaposition">
         <div className="pieces" />
         <div className="santaclaus" onClick={handleIncrement} />
       </div>
+      <div className="boostList"></div>
     </main>
   );
 }

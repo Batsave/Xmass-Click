@@ -1,4 +1,4 @@
-Sitemap: https://mywebsite.fr/sitemap.xml
+Sitemap: https://xmass.click/sitemap.xml
 
 User-agent: AlphaSeoBot 
 User-agent: AlphaSeoBot-SA 
