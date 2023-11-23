@@ -16,7 +16,7 @@ function App() {
     <>
       <Navbar setUrl={setUrl} navData={navData} />
       <main>
-        <Outlet context={[url, setUrl]} />
+        <Outlet context={[url, setUrl]} className="outletVisual"/>
       </main>
       <Footer />
     </>

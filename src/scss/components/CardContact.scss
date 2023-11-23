@@ -50,6 +50,7 @@
 
 .cardContact {
   display: flex;
+  min-width: 100px ;
   align-items: center;
   flex-direction: column;
 }
@@ -57,6 +58,8 @@
 .cardContactContainer {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 5rem;
   margin-bottom: 1rem;
 }

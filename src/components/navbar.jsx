@@ -19,11 +19,12 @@ export default function Navbar({ navData }) {
         title="Logo XmassClick"
       />
       <div className="navbar">
-        <ul className="nav-list">
-          <div className="wildCoin">
+      <div className="wildCoin">
           {wildCoin}
           <WildCoinIncrementAction />
           </div>
+        <ul className="nav-list">
+          
           {navData.map((navIndex) => {
             if (navIndex.dropdown === undefined) {
               return navIndex.btn === false ? (

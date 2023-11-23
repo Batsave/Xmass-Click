@@ -5,18 +5,18 @@ import { useWildCoin } from "../components/WildCoin/WildCoinContext";
 
 export default function Home() {
   var snow = {
-    wind: 4,
+    wind: 0,
     maxXrange: 40,
     minXrange: 20,
     maxSpeed: 1,
     minSpeed: 3,
     color: "#fff",
     char: "*",
-    maxSize: 25,
-    minSize: 12,
+    maxSize: 32,
+    minSize: 10,
 
     flakes: [],
-    WIDTH: 0,
+    WIDTH: -10,
     HEIGHT: 0,
 
     init: function (nb) {
@@ -43,6 +43,7 @@ export default function Home() {
         flake.html.appendChild(document.createTextNode(o.char));
         frag.appendChild(flake.html);
         flake.html.style.userSelect = "none";
+        flake.html.style.overflow = "hidden";
         o.flakes.push(flake);
       }
 

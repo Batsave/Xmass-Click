@@ -38,6 +38,7 @@
   .section {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 1.4rem;
 
     .section-title {

@@ -15,8 +15,10 @@
     position: absolute;
     bottom: 2vh;
 
-    width: 400px;
-    height: 400px;
+    min-width: 320px;
+    width: 320px;
+    min-height: 320px;
+    height: 320px;
     z-index: 1;
 
     background: url("./svg/SantaClause-bag.svg");
