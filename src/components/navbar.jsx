@@ -6,18 +6,20 @@ import "../scss/root.scss";
 
 import PrimaryButton from "./buttons/PrimaryButton";
 import Burger from "./burger";
-
+import { useWildCoin } from "./WildCoin/WildCoinContext";
 export default function Navbar({ navData }) {
+  const { wildCoin } = useWildCoin();
   return (
     <nav className="header-main">
       <Link
         className="logo"
         to="/accueil"
         aria-label="Retourner à la page d'accueil"
-        title="Logo Epimeleia Massage"
+        title="Logo XmassClick"
       />
       <div className="navbar">
         <ul className="nav-list">
+          {wildCoin}
           {navData.map((navIndex) => {
             if (navIndex.dropdown === undefined) {
               return navIndex.btn === false ? (

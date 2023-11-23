@@ -8,7 +8,6 @@ import "./scss/root.scss";
 import "./scss/components/footer.scss";
 
 import navData from "./data/NavBarData.json";
-import { useWildCoin } from "./components/WildCoin/WildCoinContext";
 
 function App() {
   const [url, setUrl] = useState("https://opentdb.com/api.php?amount=1");

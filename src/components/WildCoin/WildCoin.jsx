@@ -1,6 +1,5 @@
 import { useWildCoin } from "./WildCoinContext";
 import WildCoinIncrementAction from "./WildCoinIncrementAction";
-import Ameliorations from "./Amelioration";
 
 function WildCoin() {
   const { wildCoin } = useWildCoin();
@@ -19,7 +18,6 @@ function WildCoin() {
         <p className="tetardCoinPassif">
           Taux de génération passif : Lv.{incrementPerSecond} par seconde
         </p>
-        <Ameliorations />
       </div>
     </>
   );
