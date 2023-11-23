@@ -1,14 +1,17 @@
 .mentionslegales {
-    font: var(--font);
-    width: 100vh;
+    font-family: var(--font);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    gap: 2rem;
+    padding: 10rem 0 4rem;
 }
 
 h2 {
-    background-color: var(--color-purple-light);
-    border-radius: 2px;
+
+    font-family: var(--font);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--color-grey);
 
 }
