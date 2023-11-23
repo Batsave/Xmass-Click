@@ -7,10 +7,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: auto;
   border-radius: 8px;
-  margin-top: 150px;
   box-sizing: border-box;
   color: aliceblue;
   font-size: 24px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
 }
