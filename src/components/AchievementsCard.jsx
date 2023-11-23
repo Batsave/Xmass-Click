@@ -1,7 +1,7 @@
 import "../scss/components/achievementscard.scss";
 import PropTypes from "prop-types";
 
-function AchievementsCard({ name, description, founded, image }) {
+function AchievementsCard({ name, description, image }) {
   AchievementsCard.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
