@@ -8,7 +8,12 @@ import PrimaryButton from "./buttons/PrimaryButton";
 import Burger from "./burger";
 import { useWildCoin } from "./WildCoin/WildCoinContext";
 import WildCoinIncrementAction from "./WildCoin/WildCoinIncrementAction";
+import HUDON from "../../public/NavBar/HUDON.svg";
+import HUDOFF from "../../public/NavBar/HUDOFF.svg";
+
+
 export default function Navbar({ navData }) {
+  
   const { wildCoin } = useWildCoin();
   return (
     <nav className="header-main">
@@ -60,6 +65,7 @@ export default function Navbar({ navData }) {
             );
           })}
         </ul>
+        <img src={HUDON} alt="boutton on" />
         <Burger navData={navData} />
       </div>
     </nav>

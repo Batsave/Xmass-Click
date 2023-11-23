@@ -1,6 +1,8 @@
 import "../../scss/components/Hud.scss";
+import { useWildCoin } from "../WildCoin/WildCoinContext";
 
 function Hud() {
+  const { incrementClick, incrementPerSecond } = useWildCoin();
   return (
     <div className="hudContainer">
       <div className="time">
@@ -9,11 +11,11 @@ function Hud() {
       </div>
       <div className="auto">
         <p>Auto CPS</p>
-        <p>...</p>
+        <p>{incrementPerSecond}</p>
       </div>
       <div className="player">
         <p>Player CPS</p>
-        <p>..</p>
+        <p>{incrementClick}</p>
       </div>
     </div>
   );
