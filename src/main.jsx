@@ -7,6 +7,7 @@ import ErrorPage from "./pages/404";
 import { WildCoinProvider } from "./components/WildCoin/WildCoinContext";
 import WildCoin from "./components/WildCoin/WildCoin";
 
+
 const router = createBrowserRouter([
   {
     path: "/",
