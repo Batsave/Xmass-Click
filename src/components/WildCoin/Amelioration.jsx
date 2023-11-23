@@ -10,10 +10,10 @@ function Ameliorations() {
     setIncrementPerSecond,
   } = useWildCoin();
 
-  const activePrices = [5, 15, 50, 500];
+  const activePrices = [5, 15, 50, 500]; // prix
   const passivePrices = [5, 15, 50, 500];
-  const activeIncrementValues = [1, 3, 10, 100];
-  const passiveIncrementValues = [1, 3, 10, 100];
+  const activeIncrementValues = [1, 3, 10, 100]; // boost = incrementValue
+  const passiveIncrementValues = [1, 3, 10, 100]; // = incrementValue
 
   const acheterAmelioration = (type, amount) => {
     const prices = type === "actif" ? activePrices : passivePrices;
