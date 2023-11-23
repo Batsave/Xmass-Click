@@ -4,14 +4,14 @@
         "name": "Julien",
         "description": "Il est l'élu, celui qui voit au dela de ce que vous voyez.",
         "founded":false,
-        "image": "./public/julien.png/"
+        "image": "./public/png/julien.png"
     },
       {
         "id": "1",
         "name": "Benoit",
         "description": "Maitre du temps, maitre de l'espace, sa parole est d'or et si tu ne respectes pas son temps, tu sors. ",
         "founded":false,
-        "image": "./public/benoit.png"
+        "image": "./public/png/benoit.png"
       },
       {
         "id": "2",
@@ -25,49 +25,49 @@
         "name": "Marie-Hermine",
         "description": "La logique, le franc parlé, sans nul doute une perle dans un monde de brutes ",
         "founded":false,
-        "image": "./public/m-h.png/"
+        "image": "./public/png/m-h.png"
       },
       {
         "id": "4",
         "name": "Yavuz",
         "description": "L'innovation culinaire, le cuisinier au grand coeur, l'avion petillant, l'or du Bayou. Il sait faire la fete, on l'appelle le PHP. ",
         "founded":false,
-        "image": "./public/yavuz.png/"
+        "image": "./public/png/yavuz.png"
       },
       {
         "id": "5",
         "name": "Anthony",
         "description": "Cupidon et Apollon n'ont qu'à bien se tenir, connu pour son physique legendaire, gardez vos femmes et vos hommes a double tour, a son passage c'est un ravage.",
         "founded":false,
-        "image": "./public/antho.png/"
+        "image": "./public/png/antho.png"
       },
       {
         "id": "6",
         "name": "Vincent",
         "description": "L'âme voyageuse, le vagabond au grand coeur et la main sur la bouteille. Il est le compagnon idéal pour un voyage animé. Et vogue, vogue la galère...",
         "founded":false,
-        "image": "./public/vincent.png/"
+        "image": "./public/png/vincent.png"
       },
       {
         "id": "7",
         "name": "Samuel",
         "description": "Des yeux perçants, les crocs acérés, tu le rencontreras dans la pénombre ou une foret enchantée. N'aies pas peur de ses canines affutées, son sourire et sa gentillesse sauront te rassurer. ",
         "founded":false,
-        "image": "./public/samuel.png/"
+        "image": "./public/png/samuel.png"
       },
       {
         "id": "8",
         "name": "Ayoub",
         "description": "Un ami cher, loyal et de bon conseil, il saura vous épauler, vous ecouter, mais gare à toi, âme sensible ses mots peuvent etre francs et coupants mais toujours bienveillants. Un ami quoi!",
         "founded":false,
-        "image": "./public/ayoub.png/"
+        "image": "./public/png/ayoub.png"
       },
       {
         "id": "9",
         "name": "Ayoub Ultime",
         "description": "La carte ultime, c'est l'immunité à toutes épreuves! Un style, une classe, un élan d'élégance et une intelligence raffraîchissante. La meilleure carte. Tout simplement. ",
         "founded":false,
-        "image": "./public/ayoub-ultimate.png/"
+        "image": "./public/png/ayoub-ultimate.png"
       }
       
     ]

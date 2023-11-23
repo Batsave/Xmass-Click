@@ -1,6 +1,6 @@
 import AchievementsCard from "../components/AchievementsCard";
 import "../scss/achievements.scss";
-import achievements from "../data/shop";
+import achievements from "../data/Achievements.json";
 
 function Achievements() {
   return (
