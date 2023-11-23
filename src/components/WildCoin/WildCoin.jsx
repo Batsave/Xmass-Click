@@ -1,6 +1,5 @@
 import { useWildCoin } from "./WildCoinContext";
 import WildCoinIncrementAction from "./WildCoinIncrementAction";
-import WildCoinS from "../../../public/WildCoin.svg";
 
 function WildCoin() {
   const { wildCoin } = useWildCoin();
@@ -10,9 +9,7 @@ function WildCoin() {
     <>
       <div className="WildCoin">
         <h2>WildCoin</h2>
-        <p>
-          {<img src={WildCoinS} alt="s" />} : {wildCoin}
-        </p>
+        <p>{wildCoin}</p>
         <WildCoinIncrementAction />
         <p className="tetardCoinClick">
           Taux de génération actif : Lv.{incrementClick} par onClick

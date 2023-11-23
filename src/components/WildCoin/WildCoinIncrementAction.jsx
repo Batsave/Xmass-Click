@@ -1,4 +1,5 @@
 import { useWildCoin } from "./WildCoinContext";
+import WildCoinS from "../../../public/WildCoin.svg";
 
 function WildCoinIncrementAction() {
   const { incrementClick, incrementWildCoin } = useWildCoin();
@@ -8,9 +9,7 @@ function WildCoinIncrementAction() {
   };
 
   return (
-    <button className="wildCoinBtn" onClick={handleIncrement}>
-      WildCoin
-    </button>
+    <img src={WildCoinS} className="wildCoinBtn" onClick={handleIncrement} />
   );
 }
 
