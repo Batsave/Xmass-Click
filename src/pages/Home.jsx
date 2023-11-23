@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import "../scss/home.scss";
+import WildCoin from "../components/WildCoin/WildCoin";
 
 export default function Home() {
   return (
@@ -47,11 +48,7 @@ export default function Home() {
 
         <title>My Website</title>
       </Helmet>
-
-      <div>
-        <h1>Home</h1>
-        
-      </div>
+      <WildCoin />
     </main>
   );
 }

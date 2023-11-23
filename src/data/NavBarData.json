@@ -7,51 +7,33 @@
   },
   {
     "id": "2",
-    "linkname": "Menu 1",
-    "linkurl": "/wildCoin",
-    "btn": false,
-    "dropdown": [
-
-      {
-        "id": "2-01",
-        "linkname": "1",
-        "linkurl": "/1"
-      },
-      {
-        "id": "2-02",
-        "linkname": "2",
-        "linkurl": "/2"
-      },
-      {
-        "id": "2-03",
-        "linkname": "3",
-        "linkurl": "/3"
-      }
-    ]
-  },
+    "linkname": "Boutique",
+    "linkurl": "/ameliorations",
+    "btn": false
+    },
   {
     "id": "3",
-    "linkname": "Menu-2",
-    "linkurl": "/menu-2",
+    "linkname": "Accessoires",
+    "linkurl": "/Accessoires",
     "btn": false,
     "dropdown": [
 
       {
         "id": "3-01",
-        "linkname": "1",
-        "linkurl": "/1"
+        "linkname": "Drop",
+        "linkurl": "/drop"
       },
       {
         "id": "3-02",
-        "linkname": "2",
-        "linkurl": "/2"
+        "linkname": "Buy",
+        "linkurl": "/buy"
       }
     ]
   },
   {
     "id": "4",
-    "linkname": "contact",
-    "linkurl": "/contact",
-    "btn": true
+    "linkname": "Achievements",
+    "linkurl": "/achievements",
+    "btn": false
   }
 ]
