@@ -4,7 +4,7 @@ import "../scss/home.scss";
 import { useWildCoin } from "../components/WildCoin/WildCoinContext";
 
 export default function Home() {
-  var snow = {
+  /*var snow = {
     wind: 0,
     maxXrange: 40,
     minXrange: 20,
@@ -94,7 +94,7 @@ export default function Home() {
       this.HEIGHT = document.body.clientHeight || window.innerHeight;
     },
   };
-  snow.init(1);
+  snow.init(1);*/
 
   const { incrementClick, incrementWildCoin } = useWildCoin();
 
