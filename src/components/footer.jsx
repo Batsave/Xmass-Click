@@ -1,5 +1,34 @@
 import "../scss/components/footer.scss";
 import { NavLink as Link } from "react-router-dom";
+import CardContact from "../components/cardsContact/cardContact";
+
+const infoDev = [
+  {
+    "id": "1",
+    "name": "Alix C",
+    "gitHub": "https://github.com/Halicksse",
+  },
+  {
+    "id": "2",
+    "name": "Sebatien L",
+    "gitHub": "https://github.com/Lambseb",
+  },
+  {
+    "id": "3",
+    "name": "Baptiste S",
+    "gitHub": "https://github.com/Batsave",
+  },
+  {
+    "id": "4",
+    "name": "Kevin T",
+    "gitHub": "https://github.com/tetardtek",
+  },
+  {
+    "id": "5",
+    "name": "Nicolas DF",
+    "gitHub": "https://github.com/Defreitasnicolas",
+  },
+]
 
 export default function Footer() {
   return (
@@ -44,17 +73,19 @@ export default function Footer() {
               <Link to="/cookies" title="Aller à la page Cookies">
                 Cookies
               </Link>
+              
             </li>
-            <li className="section-item">
-              <Link to="/contact" title="Aller à la page Contact">
-                Contact
-              </Link>
-            </li>
+            <li className="section-item"></li>
           </ul>
         </div>
         <div className="spacing" />
       </div>
       <div className="footer-section">
+      <div className="cardContactContainer">
+        {infoDev.map((info) => (
+          <CardContact key={info.id} name={info.name} gitHub={info.gitHub} />
+        ))}
+      </div>
         <p className="copyright">© 2023 | XX. Tous droits réservés.</p>
       </div>
     </footer>
