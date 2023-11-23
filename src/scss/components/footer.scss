@@ -6,7 +6,8 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: var(--color-black);
+  background-color: var(--bg-color);
+  border-top: solid 1px var(--color-grey);
   padding: 2rem 0;
   gap: 2rem;
 
@@ -42,7 +43,7 @@
     .section-title {
       font-family: var(--font);
       font-size: 1.2rem;
-      color: var(--color-white);
+      color: var(--color-grey);
       text-decoration-line: underline;
       text-underline-offset: 0.5rem;
     }
@@ -51,7 +52,7 @@
       max-width: 26ch;
       font-family: var(--font);
       font-size: 1rem;
-      color: var(--color-white);
+      color: var(--color-grey);
     }
     .section-list {
       display: flex;
@@ -67,7 +68,7 @@
         
         font-family: var(--font);
         font-size: 1rem;
-        color: var(--color-white);
+        color: var(--color-grey);
         transition: all 0.15s ease-in-out;
 
         &:hover {
@@ -85,7 +86,7 @@
     font-family: var(--font);
     font-size: 0.8rem;
     font-weight: 300;
-    color: var(--color-white);
+    color: var(--color-grey);
     text-align: center;
   }
 }

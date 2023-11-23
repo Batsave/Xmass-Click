@@ -1,0 +1,25 @@
+
+.shoppagecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    
+    h1 {
+        font-family: var(--font);
+        font-size: 2rem;
+        font-weight: 600;
+        color: var(--color-grey);
+    }
+    .cardcontainer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        max-width: 1280px;
+
+    }
+
+
+
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Chausette",
+    "price": "150",
+    "decription": "Chausette de qualité",
+    "link": "/",
+    "image": "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bf6d.png"
+  },
+  {
+    "name": "Chausette",
+    "price": "250",
+    "decription": "Chausette de qualité",
+    "link": "/",
+    "image": "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bf6d.png"
+  },
+  {
+    "name": "Chausette",
+    "price": "150",
+    "decription": "Chausette de qualité",
+    "link": "/",
+    "image": "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bf6d.png"
+  },
+  {
+    "name": "Chausette",
+    "price": "150",
+    "decription": "Chausette de qualité",
+    "link": "/",
+    "image": "https://assets.stickpng.com/thumbs/580b57fbd9996e24bc43bf6d.png"
+  }
+]

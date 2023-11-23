@@ -4,18 +4,17 @@
 }
 
 :root {
-  --color-gold: #f5bc2e;
-  --color-gold-hover: #cc9c21;
-  --color-gold-link: #5a4c28;
-  --color-white: #eaeaea;
-  --color-white-hover: #c9c9c9;
-  --color-light: #fefefe;
-  --color-black: #101010;
+  --color-blue-light: #dcecf3;
+  --color-purple-light: #e4e3f3;
+  --color-red-light: #c33636;
+  --color-white: #ffffff;
+  --color-light: #eaeaea;
   --color-grey: #202020;
+  --color-grey-hover: #606060;
 
-  --bg-color: var(--color-black);
+  --bg-color: var(--color-blue-light);
 
-  --font: "Montserrat", sans-serif;
+  --font: "Hanken Grotesk", sans-serif;
 }
 
 a {
@@ -25,4 +24,6 @@ a {
 main {
   min-height: 100vh;
   margin-top: 80px;
+  padding: 0 0 2rem;
+  background-color: var(--bg-color);
 }

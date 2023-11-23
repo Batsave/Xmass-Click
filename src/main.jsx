@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import ErrorPage from "./pages/404";
 import { WildCoinProvider } from "./components/WildCoin/WildCoinContext";
 import Ameliorations from "./components/WildCoin/Amelioration";
+import Boutique from "./pages/Boutique";
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/ameliorations",
         element: <Ameliorations />,
+      },
+      {
+        path: "/boutique",
+        element: <Boutique />,
       },
     ],
   },
