@@ -1,13 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
 
 :root {
-  --color-blue-light: #DCECF3;
-  --color-purple-light: #E4E3F3;
-  --color-red-light: #C33636;
+  --color-blue-light: #dcecf3;
+  --color-purple-light: #e4e3f3;
+  --color-red-light: #c33636;
   --color-white: #ffffff;
   --color-light: #eaeaea;
   --color-grey: #202020;
@@ -25,8 +24,6 @@ a {
 main {
   min-height: 100vh;
   margin-top: 80px;
-  background-color:var(--bg-color);
+  padding: 0 0 2rem;
+  background-color: var(--bg-color);
 }
-
-  
-
