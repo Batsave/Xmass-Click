@@ -7,6 +7,7 @@ import "../scss/root.scss";
 import PrimaryButton from "./buttons/PrimaryButton";
 import Burger from "./burger";
 import { useWildCoin } from "./WildCoin/WildCoinContext";
+import WildCoinS from "../../public/WildCoin.svg";
 export default function Navbar({ navData }) {
   const { wildCoin } = useWildCoin();
   return (
@@ -19,6 +20,7 @@ export default function Navbar({ navData }) {
       />
       <div className="navbar">
         <ul className="nav-list">
+          {<img src={WildCoinS} alt="s" />}
           {wildCoin}
           {navData.map((navIndex) => {
             if (navIndex.dropdown === undefined) {
