@@ -5,19 +5,20 @@ import { useWildCoin } from "../components/WildCoin/WildCoinContext";
 import achievements from "../data/Achievements.json";
 
 function Achievements() {
-  const [number, setNumber] = useState(1);
-  const { wildCoin, updateWildCoin, incrementClick } = useWildCoin();
-
-  const handleClick = () => {
-    setNumber(number + 1);
-  };
+  const { wildCoin } = useWildCoin();
+  let score = 1;
+  if (wildCoin >= 25) {
+    score = Math.floor((wildCoin - 25) / 400) + 1;
+  } else {
+    score = 0;
+  }
   return (
     <div className="fullachieve">
       <h1>Succès</h1>
       <div className="achievementscontainer">
         <div className="achievementscardcontainer">
           {achievements &&
-            achievements.slice(0, number).map((a) => {
+            achievements.slice(0, score).map((a) => {
               return (
                 <AchievementsCard
                   key={a.id}
