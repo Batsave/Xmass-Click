@@ -77,7 +77,7 @@ export default function Footer() {
             <CardContact key={info.id} name={info.name} gitHub={info.gitHub} />
           ))}
         </div>
-        <p className="copyright">© 2023 | XX. Tous droits réservés.</p>
+        <p className="copyright">© 2023 | TrueQuiLeaks. Tous droits réservés.</p>
       </div>
     </footer>
   );
