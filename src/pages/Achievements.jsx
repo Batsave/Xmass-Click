@@ -2,6 +2,8 @@ import { useState } from "react";
 import AchievementsCard from "../components/AchievementsCard";
 import "../scss/achievements.scss";
 import achievements from "../data/Achievements.json";
+
+
 function Achievements() {
   const numberRandom = Math.floor(Math.random() * achievements.length);
   const [cumulReward, setCumulReward] = useState(null);
