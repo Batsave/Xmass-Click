@@ -1,5 +1,7 @@
 import "../../scss/components/Hud.scss";
 import { useWildCoin } from "../WildCoin/WildCoinContext";
+import { useState } from "react";
+import Timer from "../timer/Timer";
 import propTypes from "prop-types";
 
 function Hud({ isVisible }) {
@@ -27,7 +29,7 @@ function Hud({ isVisible }) {
       <div style={{ display: hiddenDiv }} className="hudStats">
         <div className="time section">
           <p>Temps de jeu</p>
-          <p>...</p>
+          <p><Timer /></p>
         </div>
         <div className="auto section">
           <p>Auto CPS</p>

@@ -12,10 +12,14 @@ import HUDON from "../../public/NavBar/HUDON.svg";
 import HUDOFF from "../../public/NavBar/HUDOFF.svg";
 import { useState } from "react";
 
-
 export default function Navbar({ navData, isVisible, setIsVisible }) {
   const { wildCoin } = useWildCoin();
   const [imageSrc, setImageSrc] = useState(HUDON);
+  const [timerVisible, setTimerVisible] = useState(false);
+
+  const handleClickWildCoin = () => {
+    setTimerVisible(true);
+  };
 
   const toggleHud = () => {
   
