@@ -10,10 +10,19 @@ export function WildCoinProvider({ children }) {
     wildCoin: 0,
     incrementClick: 1,
     incrementPerSecond: 0,
+
   };
 
   const [state, setState] = useState(initialState);
-
+  const [coffee, setCoffee] = useState([false, 0]);
+  const [manic, setManic] = useState([false, 0]);
+  const [snowman, setSnowman] = useState([false, 0]);
+  const [bonnet, setBonnet] = useState([false, 0]);
+  const [sugar, setSugar] = useState([false, 0]);
+  const [cookie, setCookie] = useState([false, 0]);
+  const [couronne, setCouronne] = useState([false, 0]);
+  const [epice, setEpice] = useState([false, 0]);
+  const [biere, setBiere] = useState([false, 0]);
   const updateWildCoin = (amount) => {
     setState((prev) => ({
       ...prev,
@@ -60,7 +69,28 @@ export function WildCoinProvider({ children }) {
     setIncrementClick,
     setIncrementPerSecond,
     setWildCoin,
+    coffee,
+    setCoffee,
+    manic,
+    setManic,
+    snowman,
+    setSnowman,
+    bonnet,
+    setBonnet,
+    sugar,
+    setSugar,
+    cookie,
+    setCookie,
+    couronne,
+    setCouronne,
+    epice,
+    setEpice,
+    biere,
+    setBiere,
+  
   };
+
+
 
   return (
     <WildCoinContext.Provider value={contextValue}>
