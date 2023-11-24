@@ -10,8 +10,13 @@ function AchievementsCard({ name, description, image, key }) {
   };
 
   return (
-    <div className="achievCardcontainer" key={key}>
-      <img className="achievecardpicture" src={image} alt="cartes speciales" />
+    <div className="achievCardcontainer">
+      <img
+        className="achievecardpicture"
+        key={key}
+        src={image}
+        alt="cartes speciales"
+      />
       <div className="achievetitle">
         <p className="achievname">{name}</p>
         <p className="achievdescription">{description}</p>

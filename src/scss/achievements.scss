@@ -5,12 +5,11 @@
   background-color: var(--color-blue-light);
   width: 100%;
   max-width: 1280px;
-  
   margin: 0 auto;
 }
 
 .achievementscontainer {
-  margin:auto;
+  margin: auto;
   display: flex;
   align-items: center;
 }
@@ -27,5 +26,6 @@ h1 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  min-height: 300px;
   gap: 3rem;
 }
