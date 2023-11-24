@@ -11,12 +11,23 @@ function Timer() {
     }, 1000);
 
     return () => clearInterval(intervalId);
-  }, []); 
+  }, []);
+
+  const formatTime = (time) => {
+    const hours = Math.floor(time / 3600);
+    const minutes = Math.floor((time % 3600) / 60);
+    const seconds = time % 60;
+
+    const formattedTime = `${hours < 10 ? '0' : ''}${hours}:${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    
+    return formattedTime;
+  };
+
   return (
     <div>
-      <p>{seconds} secondes</p>
+      <p>{formatTime(seconds)}</p>
     </div>
-  )
+  );
 }
 
 export default Timer

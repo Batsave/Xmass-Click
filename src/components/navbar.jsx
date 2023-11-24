@@ -27,7 +27,6 @@ export default function Navbar({ navData, isVisible, setIsVisible, toggleSnow, s
   const [imageSrc, setImageSrc] = useState(HUDON);
   const [snowImageSrc, setSnowImageSrc] = useState(SnowOff);
   const [timerVisible, setTimerVisible] = useState(false);
-
   const handleClickWildCoin = () => {
     setTimerVisible(true);
   };
