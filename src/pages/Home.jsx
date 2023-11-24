@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import { useOutletContext } from "react-router-dom";
 import PropTypes from "prop-types";
 import "../scss/home.scss";
+import { useEffect } from "react";
 
 import { useWildCoin } from "../components/WildCoin/WildCoinContext";
 
@@ -92,6 +93,13 @@ export default function Home() {
       }, 20);
     },
 
+    stop: function () {
+      for (var i = 0, c = this.flakes.length; i < c; i++) {
+        document.body.removeChild(this.flakes[i].html);
+      }
+      this.flakes = [];
+    },
+
     random: function (range, num) {
       num = num ? num : 1;
       return Math.floor(Math.random() * (range + 1) * num) / num;
@@ -126,12 +134,18 @@ export default function Home() {
     createParticle(50, 300);
   };
 
- 
-  if (toggleSnow === true) {
-    snow.init(10);
-  } else {
-    null
-  }
+  useEffect(() => {
+    if (toggleSnow) {
+      snow.init(10);
+    } else {
+      snow.stop();
+    }
+
+    return () => {
+      snow.stop();
+    };
+  }, [toggleSnow]);
+
   return (
     <main className="bghomecover">
       <Helmet>

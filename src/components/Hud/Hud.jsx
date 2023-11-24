@@ -46,7 +46,7 @@ function Hud({ isVisible }) {
             <div className="boosterItem">
               <div
                 className="boosterIcon"
-                style={{ backgroundImage: `url(./svg/tasse.svg)` }}
+                style={{ backgroundImage: `url(/svg/Tasse.svg)` }}
                 alt="coffee"
               />
               <div className="countbox">
@@ -58,7 +58,7 @@ function Hud({ isVisible }) {
             <div className="boosterItem">
               <div
                 className="boosterIcon"
-                style={{ backgroundImage: `url(./svg/Hand.svg)` }}
+                style={{ backgroundImage: `url(/svg/Hand.svg)` }}
                 alt="coffee"
               />
               <div className="countbox">
@@ -70,7 +70,7 @@ function Hud({ isVisible }) {
             <div className="boosterItem">
               <div
                 className="boosterIcon"
-                style={{ backgroundImage: `url(./svg/Bonhome.svg)` }}
+                style={{ backgroundImage: `url(/svg/Bonhome.svg)` }}
                 alt="coffee"
               />
               <div className="countbox">
@@ -82,7 +82,7 @@ function Hud({ isVisible }) {
             <div className="boosterItem">
               <div
                 className="boosterIcon"
-                style={{ backgroundImage: `url(./svg/Bonnet.svg)` }}
+                style={{ backgroundImage: `url(/svg/Bonnet.svg)` }}
                 alt="coffee"
               />
               <div className="countbox">
@@ -94,7 +94,7 @@ function Hud({ isVisible }) {
             <div className="boosterItem">
               <div
                 className="boosterIcon"
-                style={{ backgroundImage: `url(./svg/Canne.svg)` }}
+                style={{ backgroundImage: `url(/svg/Canne.svg)` }}
                 alt="coffee"
               />
               <div className="countbox">
@@ -106,7 +106,7 @@ function Hud({ isVisible }) {
             <div className="boosterItem">
               <div
                 className="boosterIcon"
-                style={{ backgroundImage: `url(./svg/Cookie.svg)` }}
+                style={{ backgroundImage: `url(/svg/Cookie.svg)` }}
                 alt="coffee"
               />
               <div className="countbox">
@@ -118,7 +118,7 @@ function Hud({ isVisible }) {
             <div className="boosterItem">
               <div
                 className="boosterIcon"
-                style={{ backgroundImage: `url(./svg/Courone.svg)` }}
+                style={{ backgroundImage: `url(/svg/Courone.svg)` }}
                 alt="coffee"
               />
               <div className="countbox">
@@ -130,7 +130,7 @@ function Hud({ isVisible }) {
             <div className="boosterItem">
               <div
                 className="boosterIcon"
-                style={{ backgroundImage: `url(./svg/PainDep.svg)` }}
+                style={{ backgroundImage: `url(/svg/PainDep.svg)` }}
                 alt="coffee"
               />
               <div className="countbox">
@@ -142,7 +142,7 @@ function Hud({ isVisible }) {
             <div className="boosterItem">
               <div
                 className="boosterIcon"
-                style={{ backgroundImage: `url(./svg/Beer.svg)` }}
+                style={{ backgroundImage: `url(/svg/Beer.svg)` }}
                 alt="coffee"
               />
               <div className="countbox">

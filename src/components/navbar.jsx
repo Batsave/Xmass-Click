@@ -42,9 +42,9 @@ export default function Navbar({ navData, isVisible, setIsVisible, toggleSnow, s
       setImageSrc(HUDON)
     }
   }
-  const toggleSnowBtn = () => {
-  
-    if (!toggleSnow) {
+  function toggleSnowBtn() {
+ 
+    if (toggleSnow === false) {
       setToggleSnow(true)
       setSnowImageSrc(SnowOn)
     }else{
