@@ -1,5 +1,5 @@
 .bghomecover {
-  background-image: url("./png/bg-cover.png");
+  background-image: url("/png/bg-cover.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -21,7 +21,7 @@
     height: 320px;
     z-index: 1;
 
-    background: url("./svg/SantaClause-bag.svg");
+    background: url("/svg/SantaClause-bag.svg");
     background-repeat: no-repeat;
     background-size: contain;
 
