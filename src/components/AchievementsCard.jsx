@@ -1,7 +1,7 @@
 import "../scss/components/achievementscard.scss";
 import PropTypes from "prop-types";
 
-function AchievementsCard({ name, description, founded, image }) {
+function AchievementsCard({ name, description, image }) {
   AchievementsCard.propTypes = {
     name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
@@ -9,18 +9,12 @@ function AchievementsCard({ name, description, founded, image }) {
   };
   return (
     <div className="achievCardcontainer">
-      <div className="achievcontainer">
-        <div
-          className="achievcardpicture"
-          style={{ backgroundImage: `url(${image})` }}
-          alt={`image de ${name}`}
-        >
+        <img
+          className="achievecardpicture" src={image} alt="cartes speciales"/>
           <div className="achievetitle">
             <p className="achievname">{name}</p>
             <p className="achievdescription">{description}</p>
-          </div>
         </div>
-      </div>
     </div>
   );
 }
