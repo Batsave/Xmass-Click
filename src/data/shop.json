@@ -81,7 +81,7 @@
   },
   {
     "name": "Bière",
-    "price": 1,
+    "price": 8000,
     "incrementValue": 1000,
     "description": "Boisson de qualité, double tout les CPS, attention à ne pas trop en abuser",
     "link": "/",
