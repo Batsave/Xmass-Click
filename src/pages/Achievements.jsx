@@ -1,10 +1,8 @@
-import { useState } from "react";
 import AchievementsCard from "../components/AchievementsCard";
 import "../scss/achievements.scss";
 import achievements from "../data/Achievements.json";
 
 function Achievements() {
-  const [randomResults, setRandomResults] = useState([]);
   return (
     <div className="fullachieve">
     <h1>Succès</h1>
