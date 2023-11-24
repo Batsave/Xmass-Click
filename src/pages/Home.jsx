@@ -117,7 +117,7 @@ export default function Home() {
     const cookieClicks = document.querySelector(".pieces");
 
     const particle = document.createElement("a");
-    particle.style.backgroundImage = "url('../../public/png/w-coin.png')";
+    particle.style.backgroundImage = "url('/png/w-coin.png')";
     particle.setAttribute("class", "pieces-particle");
     particle.style.left = x + "%";
     particle.style.bottom = y + "px";
