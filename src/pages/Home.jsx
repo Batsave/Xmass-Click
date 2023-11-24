@@ -13,7 +13,7 @@ export default function Home() {
     toggleSnow: PropTypes.bool,
   }.isRequired;
 
-  const { biere, setBiere } = useWildCoin();
+  const { biere, setBiere, santaDrunk, setSantaDrunk } = useWildCoin();
 
   var snow = {
     wind: 0,
@@ -153,12 +153,16 @@ export default function Home() {
     const santa = document.querySelector(".santaclaus");
     if (main !== undefined) {
       if (biere[1] >= 1) {
-        main.style.filter = `blur(${biere[1]}px)`;
         santa.style.background = `url("/svg/SantaClause-drink.svg")`;
-        setTimeout(() => {
-          console.count("setTimeOut");
-          main.style.filter = `blur(0px)`;
-        }, biere[1] * 5000);
+        if (santaDrunk === true) {
+          main.style.filter = `blur(${biere[1]}px)`;
+
+          setTimeout(() => {
+            console.count("setTimeOut");
+            main.style.filter = `blur(0px)`;
+            setSantaDrunk(false);
+          }, biere[1] * 5000);
+        }
       }
     }
   }, [biere, setBiere]);

@@ -65,6 +65,9 @@ export function WildCoinProvider({ children }) {
     return () => clearInterval(passiveGenerationInterval);
   }, [state.incrementPerSecond]);
 
+  
+
+
   const contextValue = {
     ...state,
     incrementWildCoin,
