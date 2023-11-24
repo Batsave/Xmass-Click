@@ -12,18 +12,20 @@ import navData from "./data/NavBarData.json";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
-  
+  const [toggleSnow, setToggleSnow] = useState(false);
+
   return (
     <>
       <Navbar
         navData={navData}
         isVisible={isVisible}
         setIsVisible={setIsVisible}
+        toggleSnow={toggleSnow}
+        setToggleSnow={setToggleSnow}
       />
       <Hud isVisible={isVisible} setIsVisible={setIsVisible} />
       <main>
-        <Outlet  
-        className="outletVisual"/>
+        <Outlet context={[toggleSnow, setToggleSnow]} />
       </main>
       <Footer />
     </>

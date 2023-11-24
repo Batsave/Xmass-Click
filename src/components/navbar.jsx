@@ -10,11 +10,22 @@ import { useWildCoin } from "./WildCoin/WildCoinContext";
 import WildCoinIncrementAction from "./WildCoin/WildCoinIncrementAction";
 import HUDON from "../../public/NavBar/HUDON.svg";
 import HUDOFF from "../../public/NavBar/HUDOFF.svg";
+import SnowOn from "../../public/NavBar/SnowOn.svg";
+import SnowOff from "../../public/NavBar/SnowOff.svg";
 import { useState } from "react";
 
-export default function Navbar({ navData, isVisible, setIsVisible }) {
+export default function Navbar({ navData, isVisible, setIsVisible, toggleSnow, setToggleSnow }) {
+
+  Navbar.propTypes = {
+    isVisible: PropTypes.bool,
+    setIsVisible: PropTypes.function,
+    setToggleSnow: PropTypes.function,
+    toggleSnow: PropTypes.bool,
+  }.isRequired;
+
   const { wildCoin } = useWildCoin();
   const [imageSrc, setImageSrc] = useState(HUDON);
+  const [snowImageSrc, setSnowImageSrc] = useState(SnowOff);
   const [timerVisible, setTimerVisible] = useState(false);
 
   const handleClickWildCoin = () => {
@@ -29,6 +40,16 @@ export default function Navbar({ navData, isVisible, setIsVisible }) {
     }else{
       setIsVisible(false)
       setImageSrc(HUDON)
+    }
+  }
+  function toggleSnowBtn() {
+ 
+    if (toggleSnow === false) {
+      setToggleSnow(true)
+      setSnowImageSrc(SnowOn)
+    }else{
+      setToggleSnow(false)
+      setSnowImageSrc(SnowOff)
     }
   }
   return (
@@ -85,6 +106,7 @@ export default function Navbar({ navData, isVisible, setIsVisible }) {
           })}
         </ul>
         <img onClick={() => toggleHud()} src={imageSrc} style={{height:'28px'}} alt="boutton on" />
+        <img onClick={() => toggleSnowBtn()} src={snowImageSrc} style={{height:'28px'}} alt="boutton on" />
         <Burger navData={navData} />
       </div>
     </nav>

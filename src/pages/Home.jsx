@@ -1,10 +1,19 @@
 import { Helmet } from "react-helmet";
+import { useOutletContext } from "react-router-dom";
+import PropTypes from "prop-types";
 import "../scss/home.scss";
+import { useEffect } from "react";
 
 import { useWildCoin } from "../components/WildCoin/WildCoinContext";
 
 export default function Home() {
-  /*var snow = {
+  const [toggleSnow, setToggleSnow] = useOutletContext();
+  Home.propTypes = {
+    setToggleSnow: PropTypes.function,
+    toggleSnow: PropTypes.bool,
+  }.isRequired;
+
+  var snow = {
     wind: 0,
     maxXrange: 40,
     minXrange: 20,
@@ -84,6 +93,13 @@ export default function Home() {
       }, 20);
     },
 
+    stop: function () {
+      for (var i = 0, c = this.flakes.length; i < c; i++) {
+        document.body.removeChild(this.flakes[i].html);
+      }
+      this.flakes = [];
+    },
+
     random: function (range, num) {
       num = num ? num : 1;
       return Math.floor(Math.random() * (range + 1) * num) / num;
@@ -94,7 +110,6 @@ export default function Home() {
       this.HEIGHT = document.body.clientHeight || window.innerHeight;
     },
   };
-  snow.init(1);*/
 
   const { incrementClick, incrementWildCoin } = useWildCoin();
 
@@ -119,10 +134,25 @@ export default function Home() {
     createParticle(50, 300);
   };
 
+  useEffect(() => {
+    if (toggleSnow) {
+      snow.init(10);
+    } else {
+      snow.stop();
+    }
+
+    return () => {
+      snow.stop();
+    };
+  }, [toggleSnow]);
+
   return (
     <main className="bghomecover">
       <Helmet>
-        <meta name="description" content="Xmass Click votre nouveau Clicker préféré !" />
+        <meta
+          name="description"
+          content="Xmass Click votre nouveau Clicker préféré !"
+        />
         <meta name="robots" content="index, follow" />
         <meta
           name="googlebot"
@@ -138,7 +168,10 @@ export default function Home() {
         <meta property="og:locale" content="fr_FR" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="mywebsite | title" />
-        <meta property="og:description" content="Xmass Click votre nouveau Clicker préféré !" />
+        <meta
+          property="og:description"
+          content="Xmass Click votre nouveau Clicker préféré !"
+        />
         <meta
           property="og:image"
           content="https://xmass.click/webp/share-cover.webp"
@@ -156,7 +189,10 @@ export default function Home() {
         <meta name="twitter:site" content="" />
         <meta name="twitter:creator" content="" />
         <meta name="twitter:title" content="Xmass Click" />
-        <meta name="twitter:description" content="Xmass Click votre nouveau Clicker préféré !" />
+        <meta
+          name="twitter:description"
+          content="Xmass Click votre nouveau Clicker préféré !"
+        />
         <meta
           name="twitter:image"
           content="https://xmass.click/webp/share-cover.webp"
@@ -164,7 +200,6 @@ export default function Home() {
 
         <title>Xmass Click</title>
       </Helmet>
-
       <div className="santaposition">
         <div className="pieces" />
         <div className="santaclaus" onClick={handleIncrement} />
