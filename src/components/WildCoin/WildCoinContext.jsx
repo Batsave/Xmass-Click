@@ -12,7 +12,14 @@ export function WildCoinProvider({ children }) {
     incrementPerSecond: 0,
   };
 
-  const [state, setState] = useState(initialState);
+  const [state, setState] = useState(() => {
+    const storedContext = JSON.parse(localStorage.getItem("wildCoinContext"));
+    return {
+      ...initialState,
+      ...(storedContext || {}),
+    };
+  });
+
   const [coffee, setCoffee] = useState([false, 0]);
   const [manic, setManic] = useState([false, 0]);
   const [snowman, setSnowman] = useState([false, 0]);
@@ -57,6 +64,12 @@ export function WildCoinProvider({ children }) {
     }));
   };
 
+  
+  useEffect(() => {
+    localStorage.setItem("wildCoinContext", JSON.stringify(state));
+  }, [state]);
+
+
   useEffect(() => {
     const passiveGenerationInterval = setInterval(() => {
       updateWildCoin(state.incrementPerSecond);
@@ -64,9 +77,6 @@ export function WildCoinProvider({ children }) {
 
     return () => clearInterval(passiveGenerationInterval);
   }, [state.incrementPerSecond]);
-
-  
-
 
   const contextValue = {
     ...state,
