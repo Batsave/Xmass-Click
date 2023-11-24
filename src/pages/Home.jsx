@@ -11,7 +11,7 @@ export default function Home() {
     setToggleSnow: PropTypes.function,
     toggleSnow: PropTypes.bool,
   }.isRequired;
-  console.log(toggleSnow);
+
   var snow = {
     wind: 0,
     maxXrange: 40,

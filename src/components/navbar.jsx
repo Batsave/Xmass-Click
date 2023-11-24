@@ -46,10 +46,10 @@ export default function Navbar({ navData, isVisible, setIsVisible, toggleSnow, s
   
     if (!toggleSnow) {
       setToggleSnow(true)
-      setSnowImageSrc(SnowOff)
+      setSnowImageSrc(SnowOn)
     }else{
       setToggleSnow(false)
-      setSnowImageSrc(SnowOn)
+      setSnowImageSrc(SnowOff)
     }
   }
   return (

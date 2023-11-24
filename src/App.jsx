@@ -12,7 +12,7 @@ import navData from "./data/NavBarData.json";
 
 function App() {
   const [isVisible, setIsVisible] = useState(false);
-  const [toggleSnow, setToggleSnow] = useState(true);
+  const [toggleSnow, setToggleSnow] = useState(false);
 
   return (
     <>
