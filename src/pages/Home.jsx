@@ -13,6 +13,8 @@ export default function Home() {
     toggleSnow: PropTypes.bool,
   }.isRequired;
 
+  const { biere, setBiere } = useWildCoin();
+
   var snow = {
     wind: 0,
     maxXrange: 40,
@@ -145,6 +147,19 @@ export default function Home() {
       snow.stop();
     };
   }, [toggleSnow]);
+
+  useEffect(() => {
+    const main = document.querySelector(".bghomecover");
+    if (main !== undefined) {
+      if (biere[1] >= 2) {
+        main.style.filter = "blur(5px)";
+        setTimeout(() => {
+          main.style.filter = "blur(0px)";
+          setBiere(biere[1] - 1);
+        }, biere[1]* 5000);
+      } 
+    } 
+  }, [biere, setBiere]);
 
   return (
     <main className="bghomecover">
