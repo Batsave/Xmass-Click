@@ -13,9 +13,15 @@ import HUDOFF from "../../public/NavBar/HUDOFF.svg";
 import { useState } from "react";
 
 
+
 export default function Navbar({ navData, isVisible, setIsVisible }) {
   const { wildCoin } = useWildCoin();
   const [imageSrc, setImageSrc] = useState(HUDON);
+  const [timerVisible, setTimerVisible] = useState(false);
+
+  const handleClickWildCoin = () => {
+    setTimerVisible(true);
+  };
 
   const toggleHud = () => {
   
@@ -80,7 +86,7 @@ export default function Navbar({ navData, isVisible, setIsVisible }) {
           })}
         </ul>
         <img onClick={() => toggleHud()} src={imageSrc} alt="boutton on" />
-        <Burger navData={navData} />
+        <Burger navData={navData}  />
       </div>
     </nav>
   );
