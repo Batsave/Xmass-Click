@@ -1,7 +1,7 @@
 import { useWildCoin } from "./WildCoin/WildCoinContext";
 import "../scss/components/boutiquecard.scss";
-import PropTypes from "prop-types";
 import "../scss/components/buttons.scss";
+import PropTypes from "prop-types";
 
 export default function BoutiqueCard({
   name,
@@ -23,6 +23,7 @@ export default function BoutiqueCard({
     type: PropTypes.string.isRequired,
     buyed: PropTypes.bool.isRequired,
   };
+
   const {
     wildCoin,
     incrementClick,
@@ -30,11 +31,23 @@ export default function BoutiqueCard({
     setIncrementClick,
     incrementPerSecond,
     setIncrementPerSecond,
+    setCoffee,
+
+    setManic,
+    setSnowman,
+    setBonnet,
+    setSugar,
+    setCookie,
+    setCouronne,
+    setEpice,
+    setBiere,
   } = useWildCoin();
 
-  const acheterAmelioration = (type, price) => {
+  const acheterAmelioration = (type, price, name) => {
     const prices = price;
     const value = prices;
+
+   
 
     if (wildCoin >= value) {
       if (type === "actif") {
@@ -43,6 +56,37 @@ export default function BoutiqueCard({
         setIncrementPerSecond(incrementPerSecond + incrementValue);
       }
       setWildCoin(wildCoin - value);
+      switch (name) {
+        case "Tasse à café":
+          setCoffee((prevCoffee) => [true, prevCoffee[1] + 1]);
+          break;
+        case "Manic":
+          setManic((prevManic) => [true, prevManic[1] + 1]);
+          break;
+        case "Bonnet":
+          setBonnet((prevBonnet) => [true, prevBonnet[1] + 1]);
+          break;
+        case "Mr Bonhomme":
+          setSnowman((prevSnowman) => [true, prevSnowman[1] + 1]);
+          break;
+        case "Canne en sucre":
+          setSugar((prevSugar) => [true, prevSugar[1] + 1]);
+          break;
+        case "Cookie":
+          setCookie((prevCookie) => [true, prevCookie[1] + 1]);
+          break;
+        case "Couronne d'hiver":
+          setCouronne((prevCouronne) => [true, prevCouronne[1] + 1]);
+          break;
+        case "Mr pain d'épice":
+          setEpice((prevEpice) => [true, prevEpice[1] + 1]);
+          break;
+        case "Bière":
+          setBiere((prevBiere) => [true, prevBiere[1] + 1]);
+          break;
+        default:
+          break;
+      }
     } else {
       console.log("Pas assez de WildCoin pour acheter cette amélioration.");
     }
@@ -74,7 +118,7 @@ export default function BoutiqueCard({
           </div>
         </div>
         <button
-          onClick={() => acheterAmelioration(type, price)}
+          onClick={() => acheterAmelioration(type, price, name)}
           className="primary-button"
         >
           Acheter

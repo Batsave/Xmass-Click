@@ -1,32 +1,102 @@
 .hudContainer {
-  background-color: var(--color-grey);
-  color: var(--color-white);
-  font-family: var(--font);
-  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+
+  min-width: 260px;
   width: fit-content;
   max-width: 1280px;
-  align-items: center;
-  gap: 3rem;
-  padding: 1.2rem;
-  height: 139px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  height: fit-content;
+
+  gap: 1rem;
+  padding: 1rem;
   border-radius: 8px;
   box-sizing: border-box;
+
+  background-color: var(--color-grey);
+  color: var(--color-white);
+
+  font-family: var(--font);
   color: aliceblue;
   font-size: 1rem;
   text-align: center;
+
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   z-index: 2;
-  
 
-  .section {
+  .hudStats {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  }
+
+  .hudBooster {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
     align-items: center;
-    gap: 0.5rem;
+    padding: 1rem;
+    gap: 1rem;
+
+    min-width: 280px;
+    width: auto;
+    max-width: 1280px;
+    height: fit-content;
+
+    color: var(--color-white);
+    font-family: var(--font);
+    color: aliceblue;
+    font-size: 1rem;
+    text-align: center;
+
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    .boosterItem {
+      display: flex;
+      flex-wrap: wrap;
+      width: 30px;
+      height: 30px;
+      gap: 0.6rem;
+
+      .boosterIcon {
+        width: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .countbox {
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 15px;
+        border: solid 1px var(--color-white);
+        background-color: var(--color-white);
+        border-radius: 20%;
+        padding: 0.1rem;
+        color: var(--color-grey);
+        min-width: 20px;
+        width: fit-content;
+        height: 20px;
+        box-shadow: -1px -1px 7px 0px var(--color-grey);
+      }
+      .boosterCount {
+        font-family: var(--font);
+        font-size: 0.7rem;
+        text-align: center;
+        font-weight: 900;
+      }
+    }
   }
 }
