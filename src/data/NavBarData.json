@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "linkname": "Accueil",
+    "linkname": "Jeu",
     "linkurl": "/",
     "btn": false
   },
@@ -13,26 +13,7 @@
     },
   {
     "id": "3",
-    "linkname": "Accessoires",
-    "linkurl": "/Accessoires",
-    "btn": false,
-    "dropdown": [
-
-      {
-        "id": "3-01",
-        "linkname": "Drop",
-        "linkurl": "/drop"
-      },
-      {
-        "id": "3-02",
-        "linkname": "Buy",
-        "linkurl": "/buy"
-      }
-    ]
-  },
-  {
-    "id": "4",
-    "linkname": "Succés",
+    "linkname": "Succès",
     "linkurl": "/achievements",
     "btn": false
   }

@@ -8,6 +8,7 @@ import PrimaryButton from "./buttons/PrimaryButton";
 export default function Burger({ navData }) {
   return (
     <nav className="menuToggle">
+      
       <input type="checkbox" aria-label="Menu" />
       <span />
       <span />

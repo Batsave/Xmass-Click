@@ -12,8 +12,6 @@ import HUDON from "../../public/NavBar/HUDON.svg";
 import HUDOFF from "../../public/NavBar/HUDOFF.svg";
 import { useState } from "react";
 
-
-
 export default function Navbar({ navData, isVisible, setIsVisible }) {
   const { wildCoin } = useWildCoin();
   const [imageSrc, setImageSrc] = useState(HUDON);
@@ -37,16 +35,17 @@ export default function Navbar({ navData, isVisible, setIsVisible }) {
     <nav className="header-main">
       <Link
         className="logo"
-        to="/accueil"
+        to="/"
         aria-label="Retourner à la page d'accueil"
         title="Logo XmassClick"
       />
       <div className="navbar">
-        <ul className="nav-list">
-          <div className="wildCoin">
+      <div className="wildCoin">
           {wildCoin}
           <WildCoinIncrementAction />
           </div>
+        <ul className="nav-list">
+          
           {navData.map((navIndex) => {
             if (navIndex.dropdown === undefined) {
               return navIndex.btn === false ? (
@@ -85,8 +84,8 @@ export default function Navbar({ navData, isVisible, setIsVisible }) {
             );
           })}
         </ul>
-        <img onClick={() => toggleHud()} src={imageSrc} alt="boutton on" />
-        <Burger navData={navData}  />
+        <img onClick={() => toggleHud()} src={imageSrc} style={{height:'28px'}} alt="boutton on" />
+        <Burger navData={navData} />
       </div>
     </nav>
   );

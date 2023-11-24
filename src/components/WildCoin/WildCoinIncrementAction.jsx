@@ -9,7 +9,7 @@ function WildCoinIncrementAction() {
   };
 
   return (
-    <img src={WildCoinS} className="wildCoinBtn" onClick={handleIncrement} />
+    <img src={WildCoinS} className="wildCoinBtn" style={{width:"40px", height:"40px"}} alt="Clique pour augmenter le score" aria-label="Clique pour augmenter le score" onClick={handleIncrement} />
   );
 }
 

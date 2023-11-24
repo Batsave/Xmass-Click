@@ -5,7 +5,7 @@
     "incrementValue": 1,
     "description": "Bien chaud vous permet de tenir sur la durée",
     "link": "/",
-    "image": "./public/svg/tasse.svg",
+    "image": "./svg/Tasse.svg",
     "buyed": false,
     "type": "passif"
   },
@@ -15,7 +15,7 @@
     "incrementValue": 1,
     "description": "Evite de vous bruler quand vous sortez les cookies du four, vous gagnez 5 CPS",
     "link": "/",
-    "image": "./public/svg/Hand.svg",
+    "image": "./svg/Hand.svg",
     "buyed": false,
     "type": "actif"
   },
@@ -25,7 +25,7 @@
     "incrementValue": 10,
     "description": "Un assistant idéal pour le click",
     "link": "/",
-    "image": "./public/svg/bonhome.svg",
+    "image": "./svg/Bonhome.svg",
     "buyed": false,
     "type": "actif"
   },
@@ -35,7 +35,7 @@
     "incrementValue": 10,
     "description": "Garder vos oreilles bien à l'abri du froid et click !",
     "link": "/",
-    "image": "./public/svg/bonnet.svg",
+    "image": "./svg/Bonnet.svg",
     "buyed": false,
     "type": "passif"
   },
@@ -45,7 +45,7 @@
     "incrementValue": 100,
     "description": "Le sucre c'est connu, ca reboost",
     "link": "/",
-    "image": "./public/svg/canne.svg",
+    "image": "./svg/Canne.svg",
     "buyed": false,
     "type": "passif"
   },
@@ -55,7 +55,7 @@
     "incrementValue": 100,
     "description": "Fait avec amour",
     "link": "/",
-    "image": "./public/svg/cookie.svg",
+    "image": "./svg/Cookie.svg",
     "buyed": false,
     "type": "actif"
   },
@@ -65,7 +65,7 @@
     "incrementValue": 1000,
     "description": "Un bisous ou rien du tout !",
     "link": "/",
-    "image": "./public/svg/Courone.svg",
+    "image": "./svg/Courone.svg",
     "buyed": false,
     "type": "actif"
   },
@@ -75,7 +75,7 @@
     "incrementValue": 1000,
     "description": "Le meilleur c'est la tête",
     "link": "/",
-    "image": "./public/svg/PainDep.svg",
+    "image": "./svg/PainDep.svg",
     "buyed": false,
     "type": "passif"
   },
@@ -85,7 +85,7 @@
     "incrementValue": 1000,
     "description": "Boisson de qualité, double tout les CPS, attention à ne pas trop en abuser",
     "link": "/",
-    "image": "./public/svg/Beer.svg",
+    "image": "./svg/Beer.svg",
     "buyed": false,
     "type": "actif"
   }
