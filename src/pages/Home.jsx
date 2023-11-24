@@ -13,6 +13,8 @@ export default function Home() {
     toggleSnow: PropTypes.bool,
   }.isRequired;
 
+  const { biere, setBiere } = useWildCoin();
+
   var snow = {
     wind: 0,
     maxXrange: 40,
@@ -145,6 +147,21 @@ export default function Home() {
       snow.stop();
     };
   }, [toggleSnow]);
+
+  useEffect(() => {
+    const main = document.querySelector(".bghomecover");
+    const santa = document.querySelector(".santaclaus");
+    if (main !== undefined) {
+      if (biere[1] >= 1) {
+        main.style.filter = `blur(${biere[1]}px)`;
+        santa.style.background = `url("/svg/SantaClause-drink.svg")`;
+        setTimeout(() => {
+          console.count("setTimeOut");
+          main.style.filter = `blur(0px)`;
+        }, biere[1] * 5000);
+      }
+    }
+  }, [biere, setBiere]);
 
   return (
     <main className="bghomecover">
