@@ -8,6 +8,7 @@ import Ameliorations from "./components/WildCoin/Amelioration";
 import Boutique from "./pages/Boutique";
 import Achievements from "./pages/Achievements";
 import Legal from "./pages/Legal";
+import Cookie from "./pages/Cookie";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "/mentionslegales",
         element: <Legal />,
+      },
+      {
+        path: "/cookies",
+        element: <Cookie />,
       },
     ],
   },
