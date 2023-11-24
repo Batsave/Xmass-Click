@@ -13,25 +13,6 @@
     },
   {
     "id": "3",
-    "linkname": "Accessoires",
-    "linkurl": "/Accessoires",
-    "btn": false,
-    "dropdown": [
-
-      {
-        "id": "3-01",
-        "linkname": "Drop",
-        "linkurl": "/drop"
-      },
-      {
-        "id": "3-02",
-        "linkname": "Buy",
-        "linkurl": "/buy"
-      }
-    ]
-  },
-  {
-    "id": "4",
     "linkname": "Succès",
     "linkurl": "/achievements",
     "btn": false
