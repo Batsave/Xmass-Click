@@ -1,6 +1,6 @@
 <!--Head-->
 
-<h3> Project</h3>
+<h3>Xmass Clicker</h3>
 <br>
 
 ### 📄 About :
