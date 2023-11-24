@@ -1,0 +1,33 @@
+.achievCardcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 0.05rem;
+  max-width: 250px;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 10px 2px var(--color-grey);
+
+}
+
+.achievecardpicture {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.achievname {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  font-family: var(--font);
+  text-align: center;
+  color:rgb(29, 30, 30);
+}
+.achievdescription {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-grey);
+  font-family: var(--font);
+  color:rgb(25, 25, 26);
+  padding: 1rem;
+}

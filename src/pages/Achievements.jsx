@@ -4,9 +4,10 @@ import achievements from "../data/Achievements.json";
 
 function Achievements() {
   return (
-    <div className="achievcontainer">
-      <h1>Succès</h1>
-      <div className="achievcardcontainer">
+    <div className="fullachieve">
+    <h1>Succès</h1>
+    <div className="achievementscontainer">
+      <div className="achievementscardcontainer">
         {achievements.map((a) => {
           return (
             <AchievementsCard
@@ -18,6 +19,7 @@ function Achievements() {
           );
         })}
       </div>
+    </div>
     </div>
   );
 }

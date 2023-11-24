@@ -1,0 +1,25 @@
+.fullachieve {
+  padding-top: 10rem;
+  background-color: var(--color-blue-light);
+}
+
+.achievementscontainer {
+  margin:auto;
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--font);
+  font-size: 3rem;
+  color: var(--color-grey);
+  margin-bottom: 3rem;
+}
+
+.achievementscardcontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
