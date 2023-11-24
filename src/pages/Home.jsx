@@ -150,15 +150,17 @@ export default function Home() {
 
   useEffect(() => {
     const main = document.querySelector(".bghomecover");
+    const santa = document.querySelector(".santaclaus");
     if (main !== undefined) {
-      if (biere[1] >= 2) {
-        main.style.filter = "blur(5px)";
+      if (biere[1] >= 1) {
+        main.style.filter = `blur(${biere[1]}px)`;
+        santa.style.background = `url("/svg/SantaClause-drink.svg")`;
         setTimeout(() => {
-          main.style.filter = "blur(0px)";
-          setBiere(biere[1] - 1);
-        }, biere[1]* 5000);
-      } 
-    } 
+          console.count("setTimeOut");
+          main.style.filter = `blur(0px)`;
+        }, biere[1] * 5000);
+      }
+    }
   }, [biere, setBiere]);
 
   return (

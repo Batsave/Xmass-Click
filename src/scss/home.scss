@@ -5,6 +5,7 @@
   background-position: bottom;
   width: 100%;
   filter: blur(0px);
+  transition: filter 1s ease-in-out;
 }
 .santaposition {
   display: flex;
