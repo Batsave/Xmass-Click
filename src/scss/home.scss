@@ -24,6 +24,7 @@
     background: url("/svg/SantaClause-bag.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    cursor: pointer;
 
     &:active {
       transform: rotate(2deg);
@@ -40,18 +41,16 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    
   }
-
 }
 @keyframes pieces-up {
   0% {
-      opacity: 1;
+    opacity: 1;
   }
- 
+
   100% {
     transform: rotate3d(0, 1, 0, 180deg);
-      opacity: 0;
-      bottom: 100%;
+    opacity: 0;
+    bottom: 100%;
   }
 }
