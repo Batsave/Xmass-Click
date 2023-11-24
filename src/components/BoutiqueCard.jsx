@@ -32,7 +32,7 @@ export default function BoutiqueCard({
     incrementPerSecond,
     setIncrementPerSecond,
     setCoffee,
-
+    setSantaDrunk,
     setManic,
     setSnowman,
     setBonnet,
@@ -83,6 +83,7 @@ export default function BoutiqueCard({
           break;
         case "Bière":
           setBiere((prevBiere) => [true, prevBiere[1] + 1]);
+          setSantaDrunk(true);
           break;
         default:
           break;
