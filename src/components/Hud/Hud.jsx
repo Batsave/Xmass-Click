@@ -1,6 +1,5 @@
 import "../../scss/components/Hud.scss";
 import { useWildCoin } from "../WildCoin/WildCoinContext";
-import { useState } from "react";
 import Timer from "../timer/Timer";
 import propTypes from "prop-types";
 

@@ -1,8 +1,8 @@
 import "../scss/Cookie.scss";
 function Cookie() {
   return (
-    <div className="cookies-container">
-      <div className="cookies-item">
+    <div className="container">
+      <div className="item">
         <h2>Qu’est-ce qu’un cookie ?</h2>
         <p>
           Un cookie est un petit fichier texte sauvegardé sur votre ordinateur
@@ -18,7 +18,7 @@ function Cookie() {
         </p>
       </div>
 
-      <div className="cookies-item">
+      <div className="item">
         <h2>Pourquoi Xmass Clicker utilise des cookies ?</h2>
         <p>
           Nous utilisons des cookies pour vous fournir une expérience
@@ -32,7 +32,7 @@ function Cookie() {
         </p>
       </div>
 
-      <div className="cookies-item">
+      <div className="item">
         <h2>Comment puis-je désactiver les cookies ?</h2>
         <p>
           Vous pouvez paramétrer votre navigateur Internet pour désactiver les
@@ -42,7 +42,7 @@ function Cookie() {
         </p>
       </div>
 
-      <div className="cookies-item">
+      <div className="item">
         <h2>Firefox :</h2>
         <p>
           1. Ouvrez Firefox <br />
@@ -58,7 +58,7 @@ function Cookie() {
         </p>
       </div>
 
-      <div className="cookies-item">
+      <div className="item">
         <h2>Internet Explorer/Edge :</h2>
         <p>
           1. Ouvrez Internet Explorer <br />
@@ -69,7 +69,7 @@ function Cookie() {
         </p>
       </div>
 
-      <div className="cookies-item">
+      <div className="item">
         <h2>Safari :</h2>
         <p>
           1. Ouvrez Safari <br />
@@ -82,7 +82,7 @@ function Cookie() {
         </p>
       </div>
 
-      <div className="cookies-item">
+      <div className="item">
         <h2>Google Chrome :</h2>
         <p>
           1. Ouvrez Google Chrome <br />
