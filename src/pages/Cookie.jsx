@@ -21,12 +21,12 @@ function Cookie() {
         </div>
 
         <div className="cookies-item">
-          <h2>Pourquoi Epimeleia Massage utilise des cookies ?</h2>
+          <h2>Pourquoi Xmass.click utilise des cookies ?</h2>
           <p>
             Nous utilisons des cookies pour vous fournir une expérience
             utilisateur optimale et adaptée à vos préférences personnelles. En
             utilisant les cookies, Les cookies sont également utilisés pour
-            optimiser la performance du site. Epimeleia Massage a pris toutes
+            optimiser la performance du site. Xmass.click a pris toutes
             les mesures organisationnelles et techniques pour protéger vos
             données personnelles ainsi que d’une éventuelle perte d’informations
             ou de toute forme de traitement illicite. Pour davantage
