@@ -1,5 +1,4 @@
 
-## EXPIRES CACHING ##
  <IfModule mod_expires.c>
  ExpiresActive On
  ExpiresByType image/webp "access plus 1 year"
@@ -11,4 +10,3 @@
  ExpiresByType image/x-icon "access plus 1 year"
  ExpiresDefault "access plus 7 days"
  </IfModule>
- ## EXPIRES CACHING ##
