@@ -36,7 +36,7 @@ function Hud({ isVisible }) {
           <p>{incrementPerSecond}</p>
         </div>
         <div className="player section">
-          <p>Player CPS</p>
+          <p>Player Click</p>
           <p>{incrementClick}</p>
         </div>
         
