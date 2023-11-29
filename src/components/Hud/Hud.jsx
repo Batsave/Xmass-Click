@@ -1,6 +1,5 @@
 import "../../scss/components/Hud.scss";
 import { useWildCoin } from "../WildCoin/WildCoinContext";
-import { useState } from "react";
 import Timer from "../timer/Timer";
 import propTypes from "prop-types";
 
@@ -36,7 +35,7 @@ function Hud({ isVisible }) {
           <p>{incrementPerSecond}</p>
         </div>
         <div className="player section">
-          <p>Player CPS</p>
+          <p>Player Click</p>
           <p>{incrementClick}</p>
         </div>
         
