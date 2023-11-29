@@ -62,7 +62,9 @@ export default function Navbar({
         title="Logo XmassClick"
       />
       <div className="navbar">
-        <div className="wildCoin">{wildCoin}</div>
+        <div className="wildCoin">
+          {new Intl.NumberFormat().format(wildCoin)}
+        </div>
         <ul className="nav-list">
           {navData.map((navIndex) => {
             if (navIndex.dropdown === undefined) {
