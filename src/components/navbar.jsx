@@ -7,15 +7,19 @@ import "../scss/root.scss";
 import PrimaryButton from "./buttons/PrimaryButton";
 import Burger from "./burger";
 import { useWildCoin } from "./WildCoin/WildCoinContext";
-import WildCoinIncrementAction from "./WildCoin/WildCoinIncrementAction";
 import HUDON from "../../public/NavBar/HUDON.svg";
 import HUDOFF from "../../public/NavBar/HUDOFF.svg";
 import SnowOn from "../../public/NavBar/SnowOn.svg";
 import SnowOff from "../../public/NavBar/SnowOff.svg";
 import { useState } from "react";
 
-export default function Navbar({ navData, isVisible, setIsVisible, toggleSnow, setToggleSnow }) {
-
+export default function Navbar({
+  navData,
+  isVisible,
+  setIsVisible,
+  toggleSnow,
+  setToggleSnow,
+}) {
   Navbar.propTypes = {
     isVisible: PropTypes.bool,
     setIsVisible: PropTypes.function,
@@ -32,23 +36,21 @@ export default function Navbar({ navData, isVisible, setIsVisible, toggleSnow, s
   };
 
   const toggleHud = () => {
-  
     if (!isVisible) {
-      setIsVisible(true)
-      setImageSrc(HUDOFF)
-    }else{
-      setIsVisible(false)
-      setImageSrc(HUDON)
+      setIsVisible(true);
+      setImageSrc(HUDOFF);
+    } else {
+      setIsVisible(false);
+      setImageSrc(HUDON);
     }
-  }
+  };
   function toggleSnowBtn() {
- 
     if (toggleSnow === false) {
-      setToggleSnow(true)
-      setSnowImageSrc(SnowOn)
-    }else{
-      setToggleSnow(false)
-      setSnowImageSrc(SnowOff)
+      setToggleSnow(true);
+      setSnowImageSrc(SnowOn);
+    } else {
+      setToggleSnow(false);
+      setSnowImageSrc(SnowOff);
     }
   }
   return (
@@ -60,12 +62,8 @@ export default function Navbar({ navData, isVisible, setIsVisible, toggleSnow, s
         title="Logo XmassClick"
       />
       <div className="navbar">
-      <div className="wildCoin">
-          {wildCoin}
-          <WildCoinIncrementAction />
-          </div>
+        <div className="wildCoin">{wildCoin}</div>
         <ul className="nav-list">
-          
           {navData.map((navIndex) => {
             if (navIndex.dropdown === undefined) {
               return navIndex.btn === false ? (
@@ -104,8 +102,18 @@ export default function Navbar({ navData, isVisible, setIsVisible, toggleSnow, s
             );
           })}
         </ul>
-        <img onClick={() => toggleHud()} src={imageSrc} style={{height:'28px'}} alt="boutton on" />
-        <img onClick={() => toggleSnowBtn()} src={snowImageSrc} style={{height:'28px'}} alt="boutton on" />
+        <img
+          onClick={() => toggleHud()}
+          src={imageSrc}
+          style={{ height: "28px" }}
+          alt="boutton on"
+        />
+        <img
+          onClick={() => toggleSnowBtn()}
+          src={snowImageSrc}
+          style={{ height: "28px" }}
+          alt="boutton on"
+        />
         <Burger navData={navData} />
       </div>
     </nav>
